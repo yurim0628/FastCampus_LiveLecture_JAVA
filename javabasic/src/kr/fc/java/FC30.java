@@ -30,3 +30,35 @@ public class FC30 {
         }
     }
 }
+
+/*
+int -> byte[] (4byte를 쪼개서 바이트배열에)
+byte[] -> int
+
+스트림(빨대)의 분류: java.io
+
+1. 데이터(이진데이터, 문자)의 종류에 따른 분류
+
+1) 바이트스트림 : 이진데이터(바이너리데이터)를 처리하는 스트림
+- 바이트입력스트림 : InputStream - read() : 바이트단위로 읽기
+- 바이트출력스트림 : OutputStream - writer() : 바이트단위로 쓰기(출력)
+  ex) 파일에서 바이트데이터를 읽으려면 어떤 스트림이 필요한가? FileInputStream
+  ex) 파일에서 바이트데이터를 저장하려면 어떤 스트림이 필요한가? FileOutputStream
+2) 문자스트림: 문자데이터를 처리하는 스트림(스트림 내부에서 문자 인코딩이 적용된다)
+- 문자입력스트림 : Reader - read() : 문자단위로 읽기
+- 문자출력스트림 : Writer - write(), print(), println() : 문자단위로 쓰기
+  ex) 파일에서 문자데이터를 읽으려면 어떤 스트림이 필요한가? FileReader
+  ex) 파일에서 문자데이터를 저장하려면 어떤 스트림이 필요한가? FileWriter
+
+2. 처리방식에 따른 분류
+
+1) 노드스트림 : 입출력데이터에 가장 먼저 연결되는 스트림
+2) 필터스트림 : 단독사용불가 -> 반드시 노드스트림에 연결(연쇄)해서 사용 => (생성자)
+   : 입출력의 성능을 개선시키는 용도
+   : 버퍼기능이 있는 스트림
+     - BufferedFileInputStream, BufferedFileOutputnputStream
+     - BufferedFileReader, BufferedFileWriter
+   - 브릿지 스트림 :
+     바이트입력스트림을 문자입력스트림으로 변환 : InputStreamReader
+     바이트출력스트림을 문자출력스트림으로 변환 : OutputStreamWriter
+ */

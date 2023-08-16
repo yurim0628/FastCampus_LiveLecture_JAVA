@@ -19,5 +19,5 @@ public class MyObjectArray { // 용량체크, 늘리기, 삭제, 클리어 ... -
     public int size(){
         return this.cnt;
     }
-    public int get(int index){ return arr[index]; } // arr[1], arr[2]
+    public Object get(int index){ return arr[index]; } // arr[1], arr[2]
 }
