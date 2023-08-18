@@ -1,0 +1,22 @@
+<books>
+  <book>
+    <title>C언어</title>
+    <company>영진출판사</company>
+    <name>나길동</name>
+    <price>30000</price>
+  </book>
+  <book>
+    <title>C언어</title>
+    <company>영진출판사</company>
+    <name>나길동</name>
+    <price>30000</price>
+  </book>
+</books>
+
+C언어, 영진출판사, 나길동, 30000
+// JSON(http://json.org)
+{
+{"title":"C언어", "company":"영진출판사", "name":"나길동", "price":30000}
+{"title":"C언어", "company":"영진출판사", "name":"나길동", "price":30000}
+{"title":"C언어", "company":"영진출판사", "name":"나길동", "price":30000}
+}
