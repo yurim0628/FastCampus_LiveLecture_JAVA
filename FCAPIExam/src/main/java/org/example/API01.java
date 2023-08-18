@@ -54,3 +54,11 @@ public class API01 {
         }
     }
 }
+/*
+    객체(Object)를 문자열의 형태로 표현하는 방법
+     = 책 : VO, DTO - class
+     = 책 : text, json, xml
+     text : C언어, 영진출판사, 나길동, 30000
+     xml : ?
+     json : API
+ */
