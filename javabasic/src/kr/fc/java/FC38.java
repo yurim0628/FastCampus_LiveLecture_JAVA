@@ -31,11 +31,11 @@ public class FC38 {
             int data;
             int byteCount = 0; // 복사한 바이트 수를 기록할 변수
             while ((data = bis.read()) != -1) {
-                bos.write(data); // 읽은 바이트를 새 파일에 쓴다
+                bos.write(data); // 읽은 바이트를 새 파일에 씀
                 byteCount++;
             }
 
-            // 스트림을 닫고 리소스를 해제한다
+            // 스트림을 닫고 리소스를 해제
             bis.close();
             bos.close();
 

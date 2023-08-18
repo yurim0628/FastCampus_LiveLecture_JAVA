@@ -25,7 +25,7 @@ public class FC37 {
 
             // 책 정보를 CSV 형식으로 구성한다.
             String data = title + "," + company + "," + name + "," + price;
-            // 묶어(VO) --> DAO(CRUD)
+            // 묶어(VO) --> DAO(CRUD).
 
             // FileWriter와 BufferedWriter를 사용하여 파일에 책 정보를 저장한다.
             FileWriter fw = new FileWriter("book.txt"); // "book.txt" 파일을 생성 또는 덮어쓴다.
