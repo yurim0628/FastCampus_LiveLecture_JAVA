@@ -14,7 +14,7 @@ public class API08 {
         // Thread alpha = new Thread(target); // 스레드와 작업을 연결한다.
         Thread alpha = new AlphaData(); // AlphaData 클래스를 이용해 스레드 생성 및 시작
         // 1-3. 스레드를 시작한다.
-        alpha.start(); // 이로써 run() 메서드가 실행된다: ready 상태(Queue) -> running(실행) -> block(봉쇄) -> dead(소멸)
+        alpha.start(); // 이로써 run() 메서드가 실행된다. ready (준비) -> running (실행) -> block (봉쇄) -> dead (소멸)
 
         // 2. 1부터 100까지의 숫자 출력하기
         try {

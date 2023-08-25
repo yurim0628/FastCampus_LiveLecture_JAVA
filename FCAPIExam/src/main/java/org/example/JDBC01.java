@@ -22,7 +22,7 @@ public class JDBC01 {
             // 연결객체를 생성
             Connection con = DriverManager.getConnection(url, username, password);
             // System.out.println("연결성공");
-            // 2. SQL 문장 만들기 ( 변수 --> "+변수+")
+            // 2. SQL 문장 만들기 ( 변수 --> "+변수+" )
             String SQL = "insert into tblbook(title,company,name,price) values('"+title+"','"+company+"','"+name+"','"+price+"')";
             // 3. SQL 문장을 전송할 객체를 생성
             Statement st = con.createStatement();
