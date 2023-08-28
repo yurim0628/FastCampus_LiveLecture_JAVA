@@ -25,7 +25,7 @@ public class API01 {
             System.out.print("가격:");
             int price = Integer.parseInt(scan.nextLine());
             // Book 객체를 생성하고 리스트에 추가
-            books.add(new Book(title, company, name, price));
+            books.add(new Book(1, title, company, name, price));
         }
         // Scanner를 닫아 리소스를 해제
         scan.close();

@@ -30,7 +30,7 @@ public class API03 {
             int price = Integer.parseInt(scan.nextLine());
             // 묶고(VO) -> 담아(List)
             // Book b = new Book(title, company, name, price);
-            books.add(new Book(title, company, name, price));
+            books.add(new Book(1, title, company, name, price));
         }
         scan.close();
         // Gson gson = new Gson();

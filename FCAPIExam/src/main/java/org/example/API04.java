@@ -31,7 +31,7 @@ public class API04 {
             int price = Integer.parseInt(scan.nextLine());
             // 묶고(VO) -> 담아(List)
             // Book b = new Book(title, company, name, price);
-            books.add(new Book(title, company, name, price));
+            books.add(new Book(1, title, company, name, price));
         }
         scan.close();
         // BookList 객체를 생성하여 책 리스트 저장한다.
