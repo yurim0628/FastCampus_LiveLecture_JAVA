@@ -12,7 +12,7 @@ public class JDBC01 {
         String username = "root";
         String password="root1234!!";
 
-        String title = "C언어";
+        String title = "객체지향 자바";
         String company = "이지스퍼블리싱";
         String name = "김길동";
         int price = 2100;
