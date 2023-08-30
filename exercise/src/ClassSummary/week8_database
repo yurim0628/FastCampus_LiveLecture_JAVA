@@ -1,0 +1,40 @@
+/* 13일차 */
+1. DAO 객체의 역할은 무엇인가.
+- DAO는 "Data Access Object"의 약자로, 데이터베이스나 다른 영구 저장소에 접근하는 데 사용되는 객체를 의미한다. 
+- 주로 데이터의 생성, 조회, 수정, 삭제 등의 작업을 추상화하여 비즈니스 로직과 데이터베이스 연동을 분리하는 역할을 한다. 
+- 이를 통해 코드의 재사용성을 높이고 유지보수를 용이하게 만들 수 있다.
+
+2. 예외처리에서 예외와 상관없이 무조건 처리되는 블럭은 무엇인가.
+- finally 블럭
+
+3. CRUD와 대응되는 SQL쿼리를 작성하시오.
+- Create (Insert): `INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);`
+- Read (Select): `SELECT * FROM table_name WHERE condition;`
+- Update: `UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;`
+- Delete: `DELETE FROM table_name WHERE condition;`
+
+4. select SQL을 실행 후 결과를 받는 객체는 무엇인가.
+- ResultSet 객체
+
+5. 파라메터가 있는 SQL을 전송 할 때 사용하는 객체는 무엇인가.
+- PreparedStatement 객체
+
+6. SQL 결과집합에서 커서를 이동시키는 메서드는 무엇인가.
+- next() 메서드
+
+7. JDBC 프로그램의 단점을 기술하시오.
+- 낮은 수준의 API: JDBC는 상당한 수준의 복잡성과 반복적인 작업을 요구할 수 있다.
+- SQL 의존성: SQL 쿼리가 코드에 직접 포함되므로 데이터베이스 변경 시 코드 수정이 필요하다.
+- 보안 문제: SQL 인젝션과 같은 보안 취약점이 발생할 수 있다.
+- 성능: Connection을 맺고 끊는 과정에서 오버헤드가 발생할 수 있다.
+
+8. SQL을 전송 할 때 insert, update, delete SQL문장을 실행하는 메서드를 쓰시오.
+- executeUpdate() 메서드
+
+9. SQL을 전송 할 때 select SQL문장을 실행하는 메서드를 쓰시오.
+- executeQuery() 메서드
+
+10. JDBC Connection 객체를 만들기 위해서 필요한 정보는 무엇인가.
+- 데이터베이스의 URL, 사용자명(username), 비밀번호(password)
+==================================================================================================
+/* 14일차 */
